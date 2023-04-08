@@ -21,42 +21,104 @@
             <nav class="page-nav">
                 <a class="logo link" href="./index.html">Web<span class="text-theme-light">Studio</span> </a>
                 <ul class="menu list">
-                    <li class="menu-item ">
+                    <li class="menu-item">
                         <a class="menu-link menu-link-item link" href="./index.html">Studio</a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item">
                         <a class="menu-link link" href="./portfolio.html">Portfolio</a>
                     </li>
-                    <li class="menu-item ">
+                    <li class="menu-item">
                         <a class="menu-link link" href="">Contacts</a>
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open__icon" width="24" height="24">
+                    <use href="./images/icon.svg#icon-burger"></use>
+                </svg>
+            </button>
             <address class="address">
                 <ul class="address-menu list">
-                    <li class="menu-item">
+                    <li class="menu-address-item">
                         <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-address-item">
                         <a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+                <ul class="moble-menu-item list">
+                    <li class="menu-item">
+                        <a class="menu-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="address-menu list">
+                    <li class="menu-item">
+                        <a class="menu-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu-icon list">
+                    <li class="foofer-social-list">
+                        <a href="" class="footer-social-item">
+                            <svg class="footer-card" width="24" height="24">
+                                <use href="./images/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="foofer-social-list">
+                        <a href="" class="footer-social-item">
+                            <svg class="footer-card" width="24" height="24">
+                                <use href="./images/icon.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="foofer-social-list">
+                        <a href="" class="footer-social-item">
+                            <svg class="footer-card" width="24" height="24">
+                                <use href="./images/icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="foofer-social-list">
+                        <a href="" class="footer-social-item">
+                            <svg class="footer-card" width="24" height="24">
+                                <use href="./images/icon.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>   
+        </div>
     </div>
       
-        
+       
        
     </header>
 
     <main>
-        <!-- HERO -->
+        <!-------------- HERO ----------->
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Effective Solutions for Your Business</h1>
                     <button type="button" class="button" data-modal-open>Order Service</button>
-                </div>
-              
+                </div>  
             </section>
             <!-- advantages -->
         <section class="section feature-section" id="advantag">
@@ -69,8 +131,8 @@
                                 <use href="./images/icon.svg#icon-antenna"></use>
                         </svg>
                         </div >
-                        <h3 class="title">Strategy</h3>
-                        <p class="text">Our goal is to identify the business
+                        <h3 class="title feature-title">Strategy</h3>
+                        <p class="text advantages-text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="feature-list-text">
@@ -79,8 +141,8 @@
                                 <use href="./images/icon.svg#icon-clock"></use>
                         </svg>
                         </div>
-                        <h3 class="title">Punctuality</h3>
-                        <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible
+                        <h3 class="title feature-title">Punctuality</h3>
+                        <p class="text advantages-text">Bring the key message to the brand's audience for the best price within the shortest possible
                             time.</p>
                     </li>
                     <li class="feature-list-text">
@@ -89,8 +151,8 @@
                                 <use href="./images/icon.svg#icon-diagram"></use>
                         </svg>
                         </div>
-                        <h3 class="title">Diligence</h3>
-                        <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize
+                        <h3 class="title feature-title">Diligence</h3>
+                        <p class="text advantages-text">Research and confirm brands that present the strongest digital growth opportunities and minimize
                             risk.</p>
                     </li>
                     <li class="feature-list-text">
@@ -99,8 +161,8 @@
                                 <use href="./images/icon.svg#icon-astronaut"></use>
                         </svg>
                         </div>
-                        <h3 class="title">Technologies</h3>
-                        <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for
+                        <h3 class="title feature-title">Technologies</h3>
+                        <p class="text advantages-text">Design practice focused on digital experiences. We bring forth a deep passion for
                             problem-solving.</p>
                     </li>
                 </ul>
@@ -475,7 +537,7 @@
         </form>
         </div>
         </div>
-       
+       <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
