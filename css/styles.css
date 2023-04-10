@@ -509,6 +509,9 @@ font-size: var(--font-size);
      color: var(--secondary-text-color);
  }
 @media screen and (max-width: 767px) {
+    .advantages-text {
+        text-align: center;
+    }
    
     .feature-list-text:not(:last-child) {
        margin-bottom: 72px;
@@ -532,6 +535,7 @@ font-size: var(--font-size);
 @media screen and (max-width: 1158px) {
     .advantages-text {
             font-weight: 500;
+            
         }
     .description-section {
         display: none;
@@ -914,6 +918,7 @@ font-size: var(--font-size);
 
     .title {
         margin-bottom: 16px;
+        text-align: center;
     }
  }
 
