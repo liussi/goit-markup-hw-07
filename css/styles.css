@@ -300,6 +300,9 @@ font-size: var(--font-size);
         }
 
     .menu-address-item {
+        font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
             margin-bottom: 12px;
         }
     
@@ -313,11 +316,9 @@ font-size: var(--font-size);
         }
 
         .contact {
-            font-size: 12px;
             line-height: 1.17;
-            letter-spacing: 0.04em;
         }
-}
+    }
 
 
 @media screen and (min-width: 1158px) {
