@@ -261,6 +261,7 @@ font-size: var(--font-size);
 
         .mobile-menu-icon {
             display: flex;
+            flex-wrap: wrap;
             justify-content: flex-start;
             gap: 56px;
             margin-top: 48px;
