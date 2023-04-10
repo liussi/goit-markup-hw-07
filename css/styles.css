@@ -49,12 +49,12 @@ font-size: var(--font-size);
 .container {
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 428px) {
     .container {
-        width: 428px;
-
+        min-width: 320px;
     }
 
 }
@@ -211,7 +211,9 @@ font-size: var(--font-size);
             visibility: hidden;
             pointer-events: none;
             transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: scroll;
         }
+
     
         .mobile-menu.is-open {
             opacity: 1;
@@ -291,6 +293,12 @@ font-size: var(--font-size);
         }         
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .page-header {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
     .menu-address-item {
             margin-bottom: 12px;
         }
@@ -300,9 +308,8 @@ font-size: var(--font-size);
         }
 
         .address-menu {
-            position: absolute;
-            top: -16px;
-            right: 16px;
+           display: flex;
+           flex-direction: column;
         }
 
         .contact {
@@ -455,6 +462,7 @@ font-size: var(--font-size);
  screen and (min-resolution: 192dpi) and (min-width: 768px),
  screen and (min-resolution: 2dppx) and (min-width: 768px) {
      .hero {
+        
          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/tablet2x.jpg);
      }
  }
@@ -462,6 +470,7 @@ font-size: var(--font-size);
 @media screen and (min-width: 1158px) {
     .hero {
             max-width: 1440px;
+            padding: 188px 0;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/desktop1x.jpg);
         }
     .hero-title {        
@@ -506,9 +515,7 @@ font-size: var(--font-size);
 }
 
 @media screen and (min-width: 768px) {
-    .title {
-        text-align: left;
-    }
+    
          .feature-list {
              display: flex;
              flex-wrap: wrap;
@@ -532,7 +539,7 @@ font-size: var(--font-size);
              font-weight: 700;
              font-size: 36px;
              line-height: 1.11;
-             text-align: center;
+             text-align: start;
              text-transform: capitalize;
          }
 }
@@ -658,11 +665,18 @@ font-size: var(--font-size);
         margin-right: auto;
         margin-left: auto;
     }
+
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     .team-list {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
             gap: 24px;
@@ -730,8 +744,13 @@ font-size: var(--font-size);
 
  @media screen and (max-width: 767px){
 
+    .customers-item {
+        width: 190px;
+    }
+
     .customers-card {
-        gap: 16px;
+        column-gap: 16px;
+        row-gap: 72px;
     }
  }
 
@@ -898,6 +917,11 @@ font-size: var(--font-size);
  }
 
  @media screen and (min-width: 767px) {
+
+    .page-logo {
+            margin-bottom: 0;
+        }
+
     .page-footer-list {
         display: flex;
            flex-wrap: wrap;
