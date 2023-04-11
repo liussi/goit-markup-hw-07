@@ -47,6 +47,7 @@ font-size: var(--font-size);
 
 
 .container {
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -54,7 +55,7 @@ font-size: var(--font-size);
 
 @media screen and (min-width: 428px) {
     .container {
-        min-width: 320px;
+        width: 428px;
     }
 
 }
